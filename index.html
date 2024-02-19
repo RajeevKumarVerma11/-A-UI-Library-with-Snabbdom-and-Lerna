@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Library Example</title>
+  <link rel="stylesheet" href="./packages/ui-library/styles.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script src="./packages/ui-library/src/index.js"></script>
+  <script>
+    // Usage of the UI library
+    uiLibrary.onMount(state => {
+      console.log('Component mounted with state:', state)
+    })
+
+    uiLibrary.onUpdate(state => {
+      console.log('State updated:', state)
+    })
+  </script>
+</body>
+</html>
